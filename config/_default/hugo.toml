@@ -6,14 +6,14 @@ defaultContentLanguage = 'sv'
 [languages]
   [languages.de]
     contentDir = 'content/de'
-    disabled = true
     languageCode = 'de-DE'
     languageDirection = 'ltr'
     languageName = 'Deutsch'
     weight = 3
+    [languages.de.params]
+      flag = '🇩🇪'
   [languages.en]
     contentDir = 'content/en'
-    disabled = false
     languageCode = 'en-US'
     languageDirection = 'ltr'
     languageName = 'English'
@@ -22,7 +22,6 @@ defaultContentLanguage = 'sv'
       flag = '🇺🇸'
   [languages.sv]
     contentDir = 'content/sv'
-    disabled = false
     languageCode = 'sv-SE'
     languageDirection = 'ltr'
     languageName = 'Svenska'

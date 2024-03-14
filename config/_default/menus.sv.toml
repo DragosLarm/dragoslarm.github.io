@@ -9,16 +9,11 @@ pageRef = 'products'
 weight = 20
 
 [[main]]
-name = 'Manualer'
-pageRef = 'manuals'
-weight = 30
-
-[[main]]
 name = 'Användningsområden'
 pageRef = 'applications'
-weight = 40
+weight = 30
 
 [[main]]
 name = 'Om oss'
 pageRef = 'about'
-weight = 50
+weight = 40

@@ -1,16 +1,36 @@
 {{ define "main" }}
-<div class="my-container my-5">
-  <div class="adjusted document">
-    <h1 class="mb-3 text-3xl font-bold text-green-900">{{ .Title }}</h1>
-    <div class="divider"></div>
+<div class="my-container my-10">
+    <div class="adjusted document">
+        <h1 class="mb-3 text-3xl font-bold text-green-900">{{ .Title }}</h1>
+        <div class="divider"></div>
 
-    <div class="grid gap-8 lg:grid-cols-3">
-      <div>
-        <p class="mb-3 text-lg font-bold text-grey-800">{{ i18n "toc" . }}</p>
-        {{ .TableOfContents }}
-      </div>
-      <div class="lg:col-span-2">{{ .Content }}</div>
+        <div class="bg-[url('{{ .Params.image }}')] bg-center grid gap-8 lg:grid-cols-4">
+            <div>
+                <ul>
+                    {{ $currentPage := . }}
+                    <li class="toc-link">
+                        {{ if (eq . $currentPage) }}
+                        <a class="font-bold" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                        {{ else }}
+                        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                        {{ end }}
+                    </li>
+
+                    {{$section := .Section}} {{range where .Site.RegularPages.ByWeight
+                    "Section" $section}}
+
+                    <li class="toc-link">
+                        {{ if (eq . $currentPage) }}
+                        <a class="font-bold" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                        {{ else }}
+                        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                        {{ end }}
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="lg:col-span-3">{{ .Content }}</div>
+        </div>
     </div>
-  </div>
 </div>
 {{ end }}

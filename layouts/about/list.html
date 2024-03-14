@@ -6,6 +6,16 @@
     <div class="flex flex-col items-center justify-center gap-8">
       <img class="mb-10" src="/logo.png" width="640" />
 
+      <div class="content">{{ .Params.header }}</div>
+
+      <img
+        class="border-black rounded-full border-2"
+        width="192"
+        height="192"
+        src="/sweden.jpeg"
+        alt="Swedish flag"
+      />
+
       <div class="content">{{ .Summary }}</div>
 
       <!-- <h1 class="text-3xl font-bold text-grey-700">{{ i18n "partners" }}</h1> -->

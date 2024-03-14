@@ -1,11 +1,11 @@
-<div class="bg-green-800">
-  <div class="my-container pt-10">
+<div class="bg-green-800 border border-b-1 border-grey-800">
+  <div class="my-container flex items-end justify-between pt-3">
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
   </div>
 </div>
 
 <div class="my-container">
-  <div class="ml-4 mt-3 flex gap-5">
+  <div class="ml-2 mt-3 flex gap-3">
     {{ range .AllTranslations }}
     <a class="rounded-md p-1 hover:bg-grey-300" href="{{ .RelPermalink }}"
       >{{ .Language.Params.flag }} {{ .Language.LanguageName}}</a
