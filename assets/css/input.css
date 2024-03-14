@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .my-container {
-  @apply mx-auto max-w-screen-xl px-5 lg:px-0;
+  @apply mx-auto max-w-screen-xl lg:px-0;
 }
 
 .content h1,
@@ -28,26 +28,20 @@ p {
   @apply mb-3 text-xl font-bold text-green-900;
 }
 
-#TableOfContents {
-  @apply rounded-md bg-grey-200 p-3;
-  ul {
-    @apply font-bold text-green-900;
-    li {
-      @apply mb-1;
-    }
-  }
+.toc-link {
+  @apply px-2 py-1 hover:rounded-md hover:bg-green-800 hover:font-bold hover:text-grey-50;
 }
 
 .nav-link {
-  @apply px-5 py-2 hover:rounded-t-lg hover:bg-green-700;
+  @apply px-5 py-2 hover:rounded-lg hover:bg-green-700 lg:rounded-none lg:hover:rounded-none lg:hover:rounded-t-lg;
 }
 
 .active {
-  @apply rounded-lg bg-grey-50 font-semibold text-grey-800 hover:bg-grey-200 lg:rounded-none lg:rounded-t-lg;
+  @apply rounded-lg bg-grey-50 text-grey-900 hover:bg-grey-300 lg:rounded-none lg:rounded-t-lg;
 }
 
 .adjusted {
-  @apply mx-5;
+  @apply mx-3;
 }
 
 .divider {

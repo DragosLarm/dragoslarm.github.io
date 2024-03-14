@@ -1,24 +1,19 @@
 [[main]]
-name = 'Hem'
+name = 'Heim'
 pageRef = '/'
 weight = 10
 
 [[main]]
-name = 'Produkter'
+name = 'Produkte'
 pageRef = 'products'
 weight = 20
 
 [[main]]
-name = 'Manualer'
-pageRef = 'manuals'
+name = 'Benutzungen'
+pageRef = 'applications'
 weight = 30
 
 [[main]]
-name = 'Användningsområden'
-pageRef = 'applications'
-weight = 40
-
-[[main]]
-name = 'Om oss'
+name = 'Über uns'
 pageRef = 'about'
-weight = 50
+weight = 40

@@ -10,26 +10,29 @@
 </div>
 {{ end }}
 
-<div class="my-container my-16 flex justify-center">
+<div class="my-container my-16 flex items-center justify-between px-3">
   <img src="/logo.png" width="640" alt="" />
+  <img src="/madeinsweden.png" width="400" alt="" />
 </div>
 
-<div class="bg-green-800">
-  <div class="my-container py-10 text-2xl">
-    <div
-      class="mx-5 grid grid-cols-1 items-center justify-items-center gap-10 text-center lg:grid-cols-2"
-    >
-      <div class="font-bold text-grey-50">
-        <p>{{ .Params.summary }}</p>
-      </div>
+<div class="bg-[url('/lab.png')] bg-center border border-green-800">
+  <div class="backdrop-blur-[2px]">
+    <div class="my-container py-20 text-2xl">
+      <div
+        class="mx-5 grid grid-cols-1 items-center justify-items-center gap-10 text-center lg:grid-cols-2"
+      >
+        <div class="bg-grey-900/80 p-10 rounded-xl flex flex-col items-center text-grey-50">
+          <p>{{ .Params.summary }}</p>
+        </div>
 
-      <img
-        class="rounded-md border-4 border-grey-50"
-        src="/carousel/larm1.jpg"
-        width="640px"
-        class="d-block w-100"
-        alt="..."
-      />
+        <img
+          class="rounded-xl bg-grey-900/80"
+          src="/pico.png"
+          width="640px"
+          class="d-block w-100"
+          alt="..."
+        />
+      </div>
     </div>
   </div>
 </div>
