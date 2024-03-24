@@ -9,7 +9,7 @@ pageRef = 'products'
 weight = 20
 
 [[main]]
-name = 'Benutzungen'
+name = 'Anwendungsbereiche'
 pageRef = 'applications'
 weight = 30
 

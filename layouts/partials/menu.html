@@ -12,9 +12,9 @@ Renders a menu for the given menu ID.
 
 
 {{- with index site.Menus $menuID }}
-  <nav id="topnav" class="topnav mx-3 text-grey-50">
+  <nav id="topnav" class="topnav mx-3 text-grey-100">
       {{ range first 1 .}}
-        <a class="font-semibold pr-3 py-2 hover:bg-green-700 rounded-t-md" href="{{ .URL }}">{{ site.Title }}</a>
+        <a class="font-semibold pr-3 py-2 px-3 lg:hover:bg-grey-400 rounded-t-md" href="{{ .URL }}">{{ site.Title }}</a>
       {{ end }}
 
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}

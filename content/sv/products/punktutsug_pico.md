@@ -1,7 +1,6 @@
 +++
 title = 'Larm till punktutsug 2021'
 image = '/products/punktutsug/image.png'
-categories = ['Punktutsug']
 weight = 30
 +++
 

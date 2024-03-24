@@ -17,35 +17,31 @@ p {
 }
 
 .content h2 {
-  @apply mt-3 text-xl font-bold text-green-900;
+  @apply mt-3 text-xl font-bold text-grey-800;
 }
 
 .content h3 {
-  @apply mt-3 text-lg font-bold text-green-900;
+  @apply mt-3 text-lg font-bold text-grey-800;
 }
 
 .document h2 {
-  @apply mb-3 text-xl font-bold text-green-900;
+  @apply mb-3 text-xl font-bold text-grey-800;
 }
 
 .toc-link {
-  @apply px-2 py-1 hover:rounded-md hover:bg-green-800 hover:font-bold hover:text-grey-50;
+  @apply px-2 py-1 hover:rounded-md hover:bg-grey-500 hover:font-bold hover:text-grey-100;
 }
 
 .nav-link {
-  @apply px-5 py-2 hover:rounded-lg hover:bg-green-700 lg:rounded-none lg:hover:rounded-none lg:hover:rounded-t-lg;
+  @apply px-5 py-2 hover:rounded-lg hover:bg-grey-400 lg:rounded-none lg:hover:rounded-none lg:hover:rounded-t-lg;
 }
 
 .active {
-  @apply rounded-lg bg-grey-50 text-grey-900 hover:bg-grey-300 lg:rounded-none lg:rounded-t-lg;
+  @apply rounded-lg bg-white-100 text-grey-900 hover:bg-grey-100 lg:rounded-none lg:rounded-t-lg;
 }
 
 .adjusted {
   @apply mx-3;
-}
-
-.divider {
-  @apply mb-5 bg-green-800 py-0.5;
 }
 
 .topnav {

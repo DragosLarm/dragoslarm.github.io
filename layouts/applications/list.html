@@ -1,36 +1,42 @@
 {{ define "main" }}
+
+<div class="mt-3 bg-grey-600">
+  <div class="my-container">
+    <h1 class="mx-3 py-3 text-3xl font-bold text-grey-100">{{ .Title }}</h1>
+  </div>
+</div>
+
 <div class="my-container my-10">
-    <div class="adjusted document">
-        <h1 class="mb-3 text-3xl font-bold text-green-900">{{ .Title }}</h1>
-        <div class="divider"></div>
+  <div class="adjusted document">
+    <div
+      class="bg-[url('{{ .Params.image }}')] bg-center grid gap-8 lg:grid-cols-4"
+    >
+      <div>
+        <ul>
+          {{ $currentPage := . }}
+          <li class="toc-link">
+            {{ if (eq . $currentPage) }}
+            <a class="font-bold" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            {{ else }}
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            {{ end }}
+          </li>
 
-        <div class="bg-[url('{{ .Params.image }}')] bg-center grid gap-8 lg:grid-cols-4">
-            <div>
-                <ul>
-                    {{ $currentPage := . }}
-                    <li class="toc-link">
-                        {{ if (eq . $currentPage) }}
-                        <a class="font-bold" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-                        {{ else }}
-                        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-                        {{ end }}
-                    </li>
+          {{$section := .Section}} {{range where .Site.RegularPages.ByWeight
+          "Section" $section}}
 
-                    {{$section := .Section}} {{range where .Site.RegularPages.ByWeight
-                    "Section" $section}}
-
-                    <li class="toc-link">
-                        {{ if (eq . $currentPage) }}
-                        <a class="font-bold" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-                        {{ else }}
-                        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-                        {{ end }}
-                    </li>
-                    {{ end }}
-                </ul>
-            </div>
-            <div class="lg:col-span-3">{{ .Content }}</div>
-        </div>
+          <li class="toc-link">
+            {{ if (eq . $currentPage) }}
+            <a class="font-bold" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            {{ else }}
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="lg:col-span-3">{{ .Content }}</div>
     </div>
+  </div>
 </div>
 {{ end }}

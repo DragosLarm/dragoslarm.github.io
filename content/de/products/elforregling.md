@@ -1,16 +1,13 @@
 +++
 title = 'Dragos ELF 2012R24V'
 image = '/products/elforregling/image.png'
-categories = ['Tillval']
 weight = 40
 +++
 
-Dragos ELF 2012R24V
-
-If there is a deviation from the preset alarm limit in the event of malfunctions in the protective ventilation or in the event of a total failure of the ventilation, the visual and acoustic alarm is triggered after a certain delay (adjustable 0-60 seconds).
+Bei Abweichung von der voreingestellten Alarmgrenze bei Störungen der Schutzlüftung oder bei einem Totalausfall der Lüftung löst der optische und akustische Alarm nach einer bestimmten Verzögerung (einstellbar 0-60 Sek.) aus.
 
 <!--more-->>
 
-After another approximately 30 seconds, the electrical locking is triggered, i.e. the cabinet lighting and the connected contacts are de-energized except for the alarm and another existing contact, e.g. B. Stirrer,.
+Nach weiteren ca. 30 Sekunden wird die elektrische Verriegelung ausgelöst, d. h. die Schrankbeleuchtung und die angeschlossenen Kontakte sind bis auf den Alarm und einen weiteren vorhandenen Kontakt, z. B. Rührer, stromlos.
 
-The power is reset manually via a push button on the front. The function is blocked until the ventilation returns to normal.
+Die Stromversorgung wird manuell über einen Druckknopf an der Vorderseite zurückgesetzt. Die Funktion ist blockiert, bis die Ventilation wieder den Normalzustand erreicht hat.

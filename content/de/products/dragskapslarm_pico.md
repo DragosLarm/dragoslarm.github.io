@@ -1,27 +1,24 @@
 +++
 title = 'Dragos 2054'
 image = '/products/dragskapslarm/image.png'
-categories = ['Dragskåpslarm']
 weight = 10
 +++
 
-Dragos 2054 for laboratory fume cupboards
-
-Alarms visually and acoustically in the event of malfunctions in the protective ventilation or in the event of a total failure of the ventilation as soon as the preset alarm limit (0.5 m/s) is undershot, e.g. if the door is opened too large.
+Alarmiert optisch und akustisch bei Störungen der Schutzventilation oder bei Totalausfall der Ventilation, sobald die voreingestellte Alarmgrenze (0,5 m/s) z.B. bei zu großer Türöffnung unterschritten wird.
 
 <!--more-->
 
-### Egenskaper:
+### Eigenschaften:
 
-- Measuring range 0.1-1.0 m/s
-- Visual and acoustic alarm.
-- Adjustable alarm limit.
-- Adjustable alarm delay.
-- The acoustic alarm can be reset manually while the visual alarm continues and is automatically reset in normal ventilation status.
-- Power supply 9 volts.
-- Size 69x69x25 mm
+- Messbereich 0,1-1,0 m/s
+- Optischer und akustischer Alarm.
+- Einstellbare Alarmgrenze.
+- Einstellbare Alarmverzögerung.
+- Der akustische Alarm kann quittiert werden, während der optische weiterhin besteht und wird im normalen Ventilationszustand automatisch zurückgesetzt.
+- Netzteil 9 Volt.
+- Größe 69x69x25 mm akustischer Alarm quittierbar
 
-### Optional
+### Wahlfrei
 
-- Relay
-- Power supply 24 V
+- Relais
+- Stromversorgung 24 V

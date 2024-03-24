@@ -1,7 +1,6 @@
 +++
 title = 'Dragos 2055'
 image = '/products/dragbankslarm/image.png'
-categories = ['Dragbänkslarm']
 weight = 20
 +++
 

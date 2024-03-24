@@ -1,5 +1,5 @@
 +++
-title = "Applications"
+title = "Anwendungsbereiche"
 +++
 
 ![storage](/carousel/larm3.jpg)

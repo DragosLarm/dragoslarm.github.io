@@ -1,27 +1,21 @@
-{{ define "main" }} {{ range where .Site.RegularPages "Section" "news" | first 1
-}}
-<div class="my-container">
-  <div
-    class="mx-5 my-5 rounded-md border border-grey-300 bg-grey-200 px-5 py-3 font-bold"
-  >
-    <span class="text-red-900"> {{ i18n "news" . }} </span>
-    <a class="text-green-900" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-  </div>
-</div>
-{{ end }}
+{{ define "main" }}
 
-<div class="my-container my-16 flex items-center justify-between px-3">
-  <img src="/logo.png" width="640" alt="" />
+<div
+  class="my-container my-16 grid grid-rows-2 items-center justify-items-center px-3 lg:grid-cols-2 lg:grid-rows-1 lg:gap-5"
+>
+  <img class="lg:mx-5" src="/logo.png" width="640" alt="" />
   <img src="/madeinsweden.png" width="400" alt="" />
 </div>
 
-<div class="bg-[url('/lab.png')] bg-center border border-green-800">
+<div class="border border-grey-800 bg-[url('/lab.png')] bg-center">
   <div class="backdrop-blur-[2px]">
     <div class="my-container py-20 text-2xl">
       <div
         class="mx-5 grid grid-cols-1 items-center justify-items-center gap-10 text-center lg:grid-cols-2"
       >
-        <div class="bg-grey-900/80 p-10 rounded-xl flex flex-col items-center text-grey-50">
+        <div
+          class="flex flex-col items-center rounded-xl bg-grey-900/80 p-10 text-grey-100"
+        >
           <p>{{ .Params.summary }}</p>
         </div>
 
@@ -38,36 +32,46 @@
 </div>
 
 <div class="mx-5">
-  <div class="mx-auto my-20 max-w-screen-md text-center text-lg">
-    {{ .Content }}
+  <div class="mx-auto my-20 max-w-screen-lg text-center text-lg">
+    {{ .Params.intro }}
   </div>
+</div>
+
+<div class="bg-grey-600 px-5 py-3">
+  <h1 class="mx-auto max-w-screen-lg text-center text-3xl text-grey-100">
+    {{ i18n "why" . }}
+  </h1>
+</div>
+
+<div class="mb-20 border-b border-grey-200 bg-grey-100 px-5 py-10">
+  <div class="mx-auto max-w-screen-lg">{{ .Content }}</div>
 </div>
 
 <div class="my-container my-5">
   <div class="mx-5 flex flex-col gap-10 lg:flex-row">
     <div
-      class="max-w-48 flex flex-1 flex-col items-center gap-1 rounded-xl border border-grey-300 bg-grey-200 p-5 text-center"
+      class="max-w-48 flex flex-1 flex-col items-center gap-1 rounded-xl border border-grey-300 bg-grey-100 p-5 text-center"
     >
       {{ partial "svg/secure.html" . }}
-      <h3 class="mt-5 text-2xl font-bold text-green-900">
+      <h3 class="mt-5 text-2xl font-bold text-grey-700">
         {{ i18n "section1" . }}
       </h3>
       <div>{{ .Params.section1 }}</div>
     </div>
     <div
-      class="flex flex-1 flex-col items-center gap-1 rounded-xl border border-grey-300 bg-grey-200 p-5 text-center"
+      class="flex flex-1 flex-col items-center gap-1 rounded-xl border border-grey-300 bg-grey-100 p-5 text-center"
     >
       {{ partial "svg/wrench.html" . }}
-      <h3 class="mt-5 text-2xl font-bold text-green-900">
+      <h3 class="mt-5 text-2xl font-bold text-grey-700">
         {{ i18n "section2" . }}
       </h3>
       <div>{{ .Params.section2 }}</div>
     </div>
     <div
-      class="flex flex-1 flex-col items-center gap-1 rounded-xl border border-grey-300 bg-grey-200 p-5 text-center"
+      class="flex flex-1 flex-col items-center gap-1 rounded-xl border border-grey-300 bg-grey-100 p-5 text-center"
     >
       {{ partial "svg/cost.html" . }}
-      <h3 class="mt-5 text-2xl font-bold text-green-900">
+      <h3 class="mt-5 text-2xl font-bold text-grey-700">
         {{ i18n "section3" . }}
       </h3>
       <div>{{ .Params.section3 }}</div>
@@ -78,7 +82,7 @@
 <div class="mx-5">
   <div class="mx-auto my-20 max-w-screen-md text-center text-lg">
     {{ i18n "gtc_prefix" . }}
-    <a class="font-bold text-green-900" href="/documents/Dragos Larm GTC.pdf"
+    <a class="font-bold text-grey-700" href="/documents/Dragos Larm GTC.pdf"
       >{{ i18n "gtc" . }}</a
     >
   </div>

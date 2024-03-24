@@ -1,7 +1,6 @@
 +++
 title = 'Elförreglering 2012R24V'
 image = '/products/elforregling/image.png'
-categories = ['Tillval']
 weight = 40
 +++
 

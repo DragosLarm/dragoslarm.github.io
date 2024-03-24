@@ -1,29 +1,26 @@
 +++
 title = 'Dragos 2055'
 image = '/products/dragbankslarm/image.png'
-categories = ['Dragbänkslarm']
 weight = 20
 +++
 
-Dragos 2055 for downdraft tables
-
-Alarms visually and acoustically if the perforation is covered too much or if there are malfunctions in the protective ventilation or if there is a total failure of the ventilation that falls below or exceeds the preset alarm limit.
+Alarmiert optisch und akustisch bei zu großer Abdeckung der Perforation oder bei Störungen der Schutzbelüftung oder bei einem Totalausfall der Ventilation, der die voreingestellte Alarmgrenze unter- oder überschreitet.
 
 <!--more-->>
 
-### Characteristics:
+### Eigenschaften:
 
-- Measuring range 0.1 - 10.0 m/s
-- Long-term stable sensor
-- Visual and acoustic alarm
-- Adjustable alarm limit
-- Adjustable alarm delay
-- The acoustic alarm can be reset manually while the visual alarm continues and is automatically reset in normal ventilation status.
-- Hysteresis better than 3%
-- Power supply 9V
-- Equipment box 70x70x25 mm
+- Messbereich 0,1 - 10,0 m/s
+- Langzeitstabiler Sensor
+- Optischer und akustischer Alarm
+- Einstellbare Alarmgrenze
+- Einstellbare Alarmverzögerung
+- Der akustische Alarm kann quittiert werden, während der optische weiterhin besteht und wird im normalen Ventilationszustand automatisch zurückgesetzt.
+- Hysterese besser als 3 %
+- Stromversorgung 9 V
+- Gerätekasten 70x70x25 mm
 
-### Optional
+### Wahlfrei
 
-- Relay
-- Power supply 24 VDragos 2054
+- Relais
+- Stromversorgung 24 V
